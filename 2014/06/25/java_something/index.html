@@ -23,6 +23,7 @@
 3.一个java文件中可以有多个cla">
 <meta property="og:image" content="/images/shuzu.png">
 <meta property="og:image" content="/images/duizhan.jpg">
+<meta property="og:image" content="/images/gouzao.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java_something">
 <meta name="twitter:description" content="java基础
@@ -166,11 +167,31 @@
 <li><p>多态性：方法重载，对象多态（子类对象可以与父类对象进行相互转换，而且根据其使用的子类的不同，完成的功能也不同）</p>
 </li>
 </ul>
+<h3 id="关于类-1">关于类</h3>
+<p>类中定义的方法，没有加上static关键字，是因为此时定义的方法将由对象调用，而不象之前那样与主方法定义在一个类重且由主方法直接调用。</p>
+<p>类名称，属性定义，方法定义。</p>
+<p>所有的对象名称都在栈内存中保存，而对象的具体内容则保存在对应的堆内存之中。</p>
+<ul>
+<li><p>对象使用之前必须实例化，否则会报错，空指针异常。</p>
+</li>
+<li><p>对于私有属性要使用setter和getter方法设置和访问实际上还有一个原因，就是在java中存在反射机制。</p>
+</li>
+</ul>
+<h3 id="构造方法">构造方法</h3>
+<ul>
+<li><p>构造方法的名称必须与类名称一致</p>
+</li>
+<li><p>构造方法的声明处不能有任何返回值类型的声明</p>
+</li>
+<li><p>不能在构造方法中使用return返回一个值</p>
+</li>
+</ul>
+<p><img src="/images/gouzao.jpg" alt="gouzao"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/25/java_something/" data-id="sjrc8ejcxzxxgq37" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/25/java_something/" data-id="xiup98wzqm0jpse8" class="article-share-link">Share</a>
       
       
     </footer>
