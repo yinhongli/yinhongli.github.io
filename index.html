@@ -108,11 +108,18 @@
 <p>继承： class  子类 <code>extends</code> 父类｛｝，只允许多层继承，而不能多重继承。继承的子类有时称为派生类。子类不能直接访问父类的私有成员，子类可以调用父类中的非私有方法，但是不能直接调用父类中的私有成员。</p>
 <p>子类对象的init过程，子类对象在init之前必须先调用父类的构造方法后再调用子类自己的构造方法。</p>
 <p><img src="/images/zilei.png" alt="zilei"></p>
+<p>方法的覆写：子类定义了与父类同名的方法，但是在方法覆写时必须考虑到权限，被子类覆写的方法不能拥有比父类方法更加严格的访问权限。</p>
+<p><code>不过子类为什么要定义跟父类名称一样的方法呢？</code></p>
+<p>private&lt;default&lt;public 如果父类中方法时public 子类必须也是public，否则程序无法编译。 子类权限只能放大。</p>
+<p>private方法不能覆写。</p>
+<p>如果想要继续调用父类中被覆写过的方法，使用super关键字就可以。</p>
+<p><img src="/images/fuxie.png" alt="fuxie"></p>
+<p><img src="/images/super.png" alt="super"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/07/02/java-2/" data-id="rzplftsxs98q4j0o" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/07/02/java-2/" data-id="uikjq0ty63gt5amb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -233,7 +240,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/25/java_something/" data-id="xt05wpwcusv2wz3d" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/25/java_something/" data-id="pplyu5v8vjz9ihi9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -269,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/16/my-test/" data-id="y2f56bde1uq0oh0t" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/16/my-test/" data-id="75ci0vufxntr37cj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -305,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/16/my-new-post/" data-id="us2jg1v84jjrwh0q" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/16/my-new-post/" data-id="56s2h4ih0j8cq8hm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -367,7 +374,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/12/hello-world/" data-id="fhtzqambfyq53bn4" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/12/hello-world/" data-id="354kge89g13mmsa9" class="article-share-link">Share</a>
       
       
     </footer>
