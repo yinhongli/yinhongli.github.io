@@ -14,6 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="yinhl's blog">
 <meta name="twitter:description" content="Do one thing and do it well">
+
   
     <link rel="alternative" href="/atom.xml" title="yinhl&#39;s blog" type="application/atom+xml">
   
@@ -21,6 +22,7 @@
     <link rel="icon" href="/favicon.png">
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
 </head>
@@ -67,7 +69,7 @@
     <article id="java-java-2" class="article article-type-java" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/07/02/java-2/" class="article-date">
-  <time datetime="2014-07-02T03:41:11.000Z" itemprop="datePublished">Jul 2 2014</time>
+  <time datetime="2014-07-02T11:41:11.000Z" itemprop="datePublished">Jul 2 2014</time>
 </a>
     
   </div>
@@ -115,11 +117,53 @@
 <p>如果想要继续调用父类中被覆写过的方法，使用super关键字就可以。</p>
 <p><img src="/images/fuxie.png" alt="fuxie"></p>
 <p><img src="/images/super.png" alt="super"></p>
+<h3 id="范例_－－继承的应用">范例 －－继承的应用</h3>
+<p>定义一个整型数组类，要求包含构造方法，增加数据，输出数据成员方法，并利用数组实现动态内存分配，在此基础上定义出以下子类</p>
+<p>排序类：实现排序</p>
+<p>反转类：实现数据反向存放</p>
+<h3 id="final关键字">final关键字</h3>
+<ul>
+<li><p>使用final声明的类不能有子类</p>
+</li>
+<li><p>使用final声明的方法不能被子类所覆写</p>
+</li>
+<li><p>使用final声明的变量既成为常量，常量不可以修改</p>
+</li>
+</ul>
+<h3 id="抽象类">抽象类</h3>
+<p>java中可以创建一种类专门用来当作父类，这种类为“抽象类”，抽象类的作用类型模板，其目的是要设计者依据它的格式来修改并创建新的类，但是并不能直接由抽象类创建对象，只能通过抽象类派生出新的类，再由它来创建对象。</p>
+<ul>
+<li><p>包含一个抽象方法的类必须是抽象类</p>
+</li>
+<li><p>抽象类和抽象方法都要使用abstract关键字声明</p>
+</li>
+<li><p>抽象方法只需声明而不需要实现</p>
+</li>
+<li><p>抽象类必须被子继承，子类（如果不是抽象类）必须覆写抽象类中的全部抽象方法</p>
+</li>
+<li><p>抽象方法不要使用private声明</p>
+</li>
+</ul>
+<h3 id="接口">接口</h3>
+<ul>
+<li>一种特殊的类，由全局常量和公共的抽象方法所组成</li>
+</ul>
+<p>interface 接口名称｛<br>   全局变量；<br>   抽象方法；<br>｝<br>接口中的方法必须定义成public访问权限</p>
+<ul>
+<li><p>接口中如果不写public，则也是public访问权限</p>
+</li>
+<li><p>与抽象类一样，接口若要使用也必须通过子类，子类通过implements关键字实现接口</p>
+</li>
+</ul>
+<p>class 子类 implements 接口a，接口b，｛｝</p>
+<ul>
+<li></li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/07/02/java-2/" data-id="uikjq0ty63gt5amb" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/07/02/java-2/" data-id="aj2ovaw9i95djeoq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -131,8 +175,8 @@
   
     <article id="post-java_something" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/06/25/java_something/" class="article-date">
-  <time datetime="2014-06-25T08:16:08.000Z" itemprop="datePublished">Jun 25 2014</time>
+    <a href="/2014/06/26/java_something/" class="article-date">
+  <time datetime="2014-06-25T16:16:08.000Z" itemprop="datePublished">Jun 26 2014</time>
 </a>
     
   </div>
@@ -143,7 +187,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/25/java_something/">java_something</a>
+      <a class="article-title" href="/2014/06/26/java_something/">java_something</a>
     </h1>
   
 
@@ -240,7 +284,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/25/java_something/" data-id="pplyu5v8vjz9ihi9" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/26/java_something/" data-id="m3ehpnuttpjf0d0b" class="article-share-link">Share</a>
       
       
     </footer>
@@ -252,8 +296,8 @@
   
     <article id="post-my-test" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/06/16/my-test/" class="article-date">
-  <time datetime="2014-06-16T09:21:25.000Z" itemprop="datePublished">Jun 16 2014</time>
+    <a href="/2014/06/17/my-test/" class="article-date">
+  <time datetime="2014-06-16T17:21:25.000Z" itemprop="datePublished">Jun 17 2014</time>
 </a>
     
   </div>
@@ -264,7 +308,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/16/my-test/">my test</a>
+      <a class="article-title" href="/2014/06/17/my-test/">my test</a>
     </h1>
   
 
@@ -276,7 +320,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/16/my-test/" data-id="75ci0vufxntr37cj" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/17/my-test/" data-id="ji50ifrqbkidyr1t" class="article-share-link">Share</a>
       
       
     </footer>
@@ -288,8 +332,8 @@
   
     <article id="post-my-new-post" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/06/16/my-new-post/" class="article-date">
-  <time datetime="2014-06-16T09:21:14.000Z" itemprop="datePublished">Jun 16 2014</time>
+    <a href="/2014/06/17/my-new-post/" class="article-date">
+  <time datetime="2014-06-16T17:21:14.000Z" itemprop="datePublished">Jun 17 2014</time>
 </a>
     
   </div>
@@ -300,7 +344,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/16/my-new-post/">my new post</a>
+      <a class="article-title" href="/2014/06/17/my-new-post/">my new post</a>
     </h1>
   
 
@@ -312,7 +356,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/16/my-new-post/" data-id="56s2h4ih0j8cq8hm" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/17/my-new-post/" data-id="zjy325jfbg4syc9r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -347,34 +391,26 @@
         <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2>
 <h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo new <span class="string">"My New Post"</span>
-</pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo server
-</pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo generate
-</pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo deploy
-</pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yinhongli.com/2014/06/12/hello-world/" data-id="354kge89g13mmsa9" class="article-share-link">Share</a>
+      <a data-url="http://yinhongli.com/2014/06/12/hello-world/" data-id="0ejp9pjqgowzlak9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -415,15 +451,15 @@
           </li>
         
           <li>
-            <a href="/2014/06/25/java_something/">java_something</a>
+            <a href="/2014/06/26/java_something/">java_something</a>
           </li>
         
           <li>
-            <a href="/2014/06/16/my-test/">my test</a>
+            <a href="/2014/06/17/my-test/">my test</a>
           </li>
         
           <li>
-            <a href="/2014/06/16/my-new-post/">my new post</a>
+            <a href="/2014/06/17/my-new-post/">my new post</a>
           </li>
         
           <li>
@@ -463,7 +499,8 @@
 <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script type="text/javascript" src="/js/script.js"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+
   </div>
 </body>
 </html>
